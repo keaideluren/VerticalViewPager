@@ -1,5 +1,6 @@
 package com.luren.verticalviewpager
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
@@ -58,5 +59,9 @@ class MainActivity : AppCompatActivity() {
         if (current >= 5) {
             current = -1
         }
+    }
+
+    fun toPage2(v: View) {
+        startActivity(Intent(this, Main2Activity::class.java))
     }
 }
